@@ -27,6 +27,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run
+        uses: actions/checkout@v2
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
